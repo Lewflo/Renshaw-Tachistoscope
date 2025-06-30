@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tachistoscope</title>
+</head>
+
+<body>
+    <div class="point-counter">
+        <div>
+            <div id="POINT_TEXT" class="combo">0</div>
+            <div class="controls">
+            </div>
+        </div>
+    </div>
+    <div class="mainwrapper noselect">
+        <div id="MAIN_MENU">
+            <select id="DIFFICULTY_SELECTION" name="Rank" id="event">
+                <option value="Free Play">Free Play</option>
+                <option value="Metamarphosis">Metamarphosis</option>
+                <option value="Radioactive">Radioactive</option>
+                <option value="Esper">Esper</option>
+                <option value="Amatsukami">Amatsukami</option>
+                <option value="Kotoamatsukami">Kotoamatsukami</option>
+            </select>
+            <form autocomplete="off" id="FORM">
+                <input placeholder="milliseconds" value="" name="delay" type="number" class="inputNumber" id="INPUT_LIFETIME" requred>
+                <input placeholder="digits" value="" name="amount" type="number" class="inputNumber" id="INPUT_DIGIT_AMOUNT" required>
+                <button type="submit" class="button-80" role="button" id="SUBMIT_FORM">confirm</button>
+            </form>
+        </div>
+        <div id="GAME">
+            <div id="QUESTION"></div>
+            <div class="confirm-wrap">
+                <input type="number" class="inputNumber" id="ANSWER">
+                <button class="button-80" type="button" id="SUBMIT_BUTTON">confirm</button>
+            </div>
+        </div>
+    </div>
+    <aside id="FEED"></aside>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
